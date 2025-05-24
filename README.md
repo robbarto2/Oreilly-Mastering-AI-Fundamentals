@@ -44,18 +44,30 @@ This course is structured around eight core modules, each offering a focused div
 
 ## 📂 Repository Structure
 
-Each section of the course is represented by a folder corresponding to the session number:
+The repository is organized into sections that correspond to the course modules, with additional supporting files:
 
-Section_1_.../
-Section_2_.../
-...
-Section_8_.../
+### Course Sections
+- `Section_1_Key_Concepts/` - Includes examples of supervised learning and Gradient Descent
+- `Section_2_Unsupervised_Learning/` - Resources for clustering (K-Means, DBSCAN) and dimensionality reduction techniques
+- `Section_3_Linear_Regression/` - Contains materials for supervised learning with linear regression
+- `Section_4_Classification - Logistic Regression/` - Materials for classification using logistic regression
+- `Section_6_Reinforcement_Learning/` - Resources for reinforcement learning concepts and examples
+- `Section_5_Decision_Tree_Example.ipynb` - A comprehensive Jupyter notebook demonstrating decision trees
+- `Section_7_CNN_Example.ipynb` - Example notebook for convolutional neural networks
 
+### Supporting Files
+- `requirements.txt` - Lists all Python package dependencies
+- `venv_mastering_AI/` - Virtual environment directory (not tracked in git)
+- `.gitignore` - Specifies files and directories to be ignored by git
 
-Each folder contains:
-- Python scripts and Jupyter notebooks with working examples
+Each section directory typically contains:
+- Python scripts (`.py`) and Jupyter notebooks (`.ipynb`) with working examples
+- Data files used in the examples (where applicable)
+- README files with section-specific instructions
 - Visualizations and demos
-- Additional notes or explanation files
+- Additional explanatory materials
+
+Note: Some sections may be added or updated as the course progresses.
 
 ---
 
