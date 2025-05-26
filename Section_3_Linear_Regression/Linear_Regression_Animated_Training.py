@@ -9,7 +9,7 @@ from matplotlib.animation import FuncAnimation
 np.random.seed(42)
 num_samples = 100
 true_slope = 2.5
-true_intercept = 8.0
+true_intercept = 8
 x_data = np.random.rand(num_samples, 1) * 3
 y_data = true_slope * x_data + true_intercept + np.random.randn(num_samples, 1)
 
@@ -19,6 +19,11 @@ y_tensor = torch.tensor(y_data, dtype=torch.float32)
 
 # Define a linear model
 model = nn.Linear(1, 1)
+
+# Initialize weights and bias to 0
+with torch.no_grad():
+    model.weight.fill_(0.0)
+    model.bias.fill_(0.0)
 
 # Define loss and optimizer
 criterion = nn.MSELoss()
