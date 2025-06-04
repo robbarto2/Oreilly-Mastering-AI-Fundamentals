@@ -27,14 +27,14 @@ with torch.no_grad():
 
 # Define loss and optimizer
 criterion = nn.MSELoss()
-optimizer = optim.SGD(model.parameters(), lr=0.1)
+optimizer = optim.SGD(model.parameters(), lr=0.02)
 
 # Store weights and biases for each epoch
 w_history = []
 b_history = []
 
 # Training loop
-epochs = 100
+epochs = 500
 for epoch in range(epochs):
     optimizer.zero_grad()
     outputs = model(x_tensor)
