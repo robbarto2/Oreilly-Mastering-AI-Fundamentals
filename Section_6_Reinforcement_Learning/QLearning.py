@@ -1,4 +1,6 @@
+# Import random for generating random numbers and making random choices in the ε-greedy strategy
 import random
+# Import pickle for saving and loading the Q-table to/from disk
 import pickle
 
 class Qlearning:
